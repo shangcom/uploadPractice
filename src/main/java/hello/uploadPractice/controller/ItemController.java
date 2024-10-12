@@ -58,8 +58,6 @@ public class ItemController {
     public String items(@PathVariable Long id, Model model) {
         Item item = itemRepository.findById(id);
         model.addAttribute("item", item);
-
-
         return "item-view";
     }
 
